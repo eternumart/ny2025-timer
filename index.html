@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер нового года</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body class="page">
+    <div class="container">
+        <div class="container__header">
+            <h1 class="title">Обратный отсчет до </h1>
+            <button class="container__button container__button_active" id="ny-button">нового года</button>
+            <button class="container__button container__button_deactive" id="corp-button">корпоратива</button>
+        </div>
+        <div class="container__wrapper">
+            <div class="timer">
+                <div class="timer__col">
+                    <p class="timer__days-value timer__num">00</p>
+                    <span class="timer__name">дней</span>
+                </div>
+                <div class="timer__separator">
+                    <span>:</span>
+                </div>
+                <div class="timer__col">
+                    <p class="timer__hours-value timer__num">00</p>
+                    <span class="timer__name">часов</span>
+                </div>
+                <div class="timer__separator">
+                    <span>:</span>
+                </div>
+                <div class="timer__col">
+                    <p class="timer__minutes-value timer__num">00</p>
+                    <span class="timer__name">минут</span>
+                </div>
+                <div class="timer__separator">
+                    <span>:</span>
+                </div>
+                <div class="timer__col">
+                    <p class="timer__seconds-value timer__num">00</p>
+                    <span class="timer__name">секунд</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

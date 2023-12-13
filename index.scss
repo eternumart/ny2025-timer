@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	color: #fff;
+}
+
+.page {
+	background: url(./images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.container {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50px;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+	}
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__button {
+        background: rgb(75, 0, 0);
+        padding: 0 20px;
+        outline: none;
+        border: none;
+        font-size: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        position: relative;
+
+        &_active {
+            transition: 0.3s;
+            background: rgb(181, 0, 0);
+        }
+
+        &_deactive {
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 4px;
+                background-color: #fff;
+                top: 20px;
+                left: 0;
+                transform: rotate(-7deg);
+            }
+        }
+
+        &:hover {
+            transition: 0.3s;
+            background: red;
+        }
+    }
+}
+
+.title {
+	font-family: Arial;
+	font-size: 40px;
+	text-align: center;
+}
+
+.timer {
+	display: flex;
+	align-items: flex-start;
+	gap: 18px;
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: 2px;
+	}
+
+	&__num {
+		font-size: 72px;
+		font-weight: 600;
+		line-height: 100%;
+        transition: opacity .2s;
+
+        &_show {
+            transition: opacity .2s;
+            opacity: 1;
+        }
+
+        &_hide {
+            transition: opacity .2s;
+            opacity: 0;
+        }
+	}
+
+	&__name {
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 120%;
+	}
+
+	&__separator {
+		font-size: 60px;
+		font-weight: 600;
+		line-height: 110%;
+	}
+}
