@@ -5,8 +5,8 @@ const timerMinutesValue = timer.querySelector(".timer__minutes-value");
 const timerSecondsValue = timer.querySelector(".timer__seconds-value");
 const NYbutton = document.querySelector("#ny-button");
 const corpButton = document.querySelector("#corp-button");
-const NewYear = "2023-12-31 23:59:59";
-const Corp = "2023-12-21 16:59:59";
+const NewYear = "2024-12-31 23:59:59";
+const Corp = "2024-12-20 16:59:59";
 let currentTimer = undefined;
 let currentTime = "";
 
